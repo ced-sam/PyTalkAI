@@ -56,7 +56,7 @@ def send_message(event=None):
             "https://api.mistral.ai/v1/chat/completions",
             headers={"Authorization": f"Bearer {API_KEY}"},
             json={
-                "model": "mistral-tiny",
+                "model": "open-mistral-nemo",
                 "messages": [{"role": "user", "content": message}]
             },
             timeout=10
